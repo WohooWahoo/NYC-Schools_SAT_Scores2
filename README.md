@@ -1,3 +1,5 @@
+Master/Detail view of REST API JSON in iOS TableView
+
 NYC-Schools SAT Scores displays a master-detail view of each
 school located within New York City (master view) using the REST
 API - "https://data.cityofnewyork.us/resource/s3k6-pzi2.json"
