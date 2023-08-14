@@ -12,12 +12,12 @@ class SchoolDetailCell: UITableViewCell {
     static let identifier = "schoolCell"
     
     public var schoolNameLabel: UILabel = {
-        let SchNameLbl = UILabel()
-        SchNameLbl.textColor = .black
-        SchNameLbl.font = .systemFont(ofSize: 15, weight: .bold)
-        SchNameLbl.numberOfLines = 2
-        return SchNameLbl
-    }()
+        let SchoolNamelBl = UILabel()
+        SchoolNamelBl.textColor = .black
+        SchoolNamelBl.font = .systemFont(ofSize: 15, weight: .bold)
+        SchoolNamelBl.numberOfLines = 2
+        return SchoolNamelBl
+    }() 
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -33,7 +33,6 @@ class SchoolDetailCell: UITableViewCell {
     
     private func commonInit() {
         setupSchoolNameLabelConstraint()
-        //setupSchoolImageConstraint()
     }
     
     private func setupSchoolNameLabelConstraint() {
