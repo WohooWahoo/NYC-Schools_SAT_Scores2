@@ -29,7 +29,7 @@ class SchoolController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
-        title = "NYC-Schools SAT"
+        title = "NY City Schools - SAT"
         navigationController?.navigationBar.prefersLargeTitles = true
         confugureSearchBar()
     
