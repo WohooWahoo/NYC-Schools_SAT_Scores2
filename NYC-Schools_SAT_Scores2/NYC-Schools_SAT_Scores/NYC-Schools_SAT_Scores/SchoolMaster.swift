@@ -41,21 +41,20 @@ class SchoolMaster: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let lblTitle = UILabel()
+        let lBlTitle = UILabel()
         
         let titleAttribute: [NSAttributedString.Key: Any] = [.font: UIFont.boldSystemFont(ofSize: 20), .foregroundColor: UIColor.black]
         
         let attributeString = NSMutableAttributedString(string: school.schoolName, attributes: titleAttribute)
         
-        lblTitle.attributedText = attributeString
-        lblTitle.numberOfLines = 2
+        lBlTitle.attributedText = attributeString
+        lBlTitle.numberOfLines = 2
         
-        lblTitle.sizeToFit()
-        navigationItem.titleView = lblTitle
+        lBlTitle.sizeToFit()
+        navigationItem.titleView = lBlTitle
     }
     
     private func updateUI() {
-        //navigationItem.title = school.schoolName
         detailView.schoolAddressLabel.text = "School address: \n\(school.primaryAddressLine1), \(school.city)."
         for score in scores {
             if school.dbn == score.dbn {
